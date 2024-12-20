@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.g.root_spec = { "cwd" }
 vim.g.lazyvim_picker = "fzf"
+vim.env.FZF_DEFAULT_COMMAND = "fd --type f --hidden --follow --exclude .git --exclude node_modules"
