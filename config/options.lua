@@ -4,3 +4,7 @@
 vim.g.root_spec = { "cwd" }
 vim.g.lazyvim_picker = "fzf"
 vim.env.FZF_DEFAULT_COMMAND = "fd --type f --hidden --follow --exclude .git --exclude node_modules"
+vim.cmd([[
+  autocmd BufEnter * let &titlestring = expand('%:t') . ' (' . expand('%:p:h:t') . ')'
+  set title
+]])

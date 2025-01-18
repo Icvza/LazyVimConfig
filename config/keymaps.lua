@@ -25,3 +25,4 @@
 --
 -- -- Mapping for switching between last two tabs
 -- vim.keymap.set("n", "`", ":e #<CR>", { silent = true, desc = "Switch Tab" })
+vim.opt.scrolloff = 999
