@@ -8,3 +8,5 @@ vim.cmd([[
   autocmd BufEnter * let &titlestring = expand('%:t') . ' (' . expand('%:p:h:t') . ')'
   set title
 ]])
+local esc = vim.api.nvim_replace_termcodes("<Esc>", true, false, true)
+vim.fn.setreg("1", "yoconsole.log('" .. esc .. "pa:" .. esc .. "la, " .. esc .. "pl);")
