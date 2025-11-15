@@ -119,15 +119,16 @@ return {
         },
         files = {
           cwd_prompt = false,
+          fd_opts = "--color=never --type f --hidden --follow --exclude .git",
           actions = {
-            ["alt-i"] = { actions.toggle_ignore },
-            ["alt-h"] = { actions.toggle_hidden },
+            ["ctrl-i"] = { actions.toggle_ignore },
+            ["ctrl-h"] = { actions.toggle_hidden },
           },
         },
         grep = {
           actions = {
-            ["alt-i"] = { actions.toggle_ignore },
-            ["alt-h"] = { actions.toggle_hidden },
+            ["ctrl-i"] = { actions.toggle_ignore },
+            ["ctrl-h"] = { actions.toggle_hidden },
           },
         },
         lsp = {

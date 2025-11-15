@@ -2,6 +2,7 @@
 -- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
 -- Add any additional options here
 vim.g.root_spec = { "cwd" }
+-- vim.opt.scrolloff = 999
 vim.g.lazyvim_picker = "fzf"
 vim.env.FZF_DEFAULT_COMMAND = "fd --type f --hidden --follow --exclude .git --exclude node_modules"
 vim.cmd([[
